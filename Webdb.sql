@@ -18,6 +18,17 @@ CREATE SCHEMA IF NOT EXISTS `web20` DEFAULT CHARACTER SET utf8mb4 ;
 USE `web20` ;
 
 -- -----------------------------------------------------
+-- Table `web20`.`admin`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `web20`.`admin` (
+  `username` VARCHAR(45) NOT NULL,
+  `password` VARCHAR(45) NOT NULL,
+  PRIMARY KEY (`username`))
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8mb4;
+
+
+-- -----------------------------------------------------
 -- Table `web20`.`user`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `web20`.`user` (
