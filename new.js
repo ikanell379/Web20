@@ -5,7 +5,7 @@ const app = express()
 const port = 3000
 
 
-app.set('view engine','pug')
+app.set('view engine')
 
 
 app.use(bodyParser.urlencoded({extended:false}))
